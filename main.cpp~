@@ -113,7 +113,7 @@ float get_distance( NODE, NODE );
 // cycle through node array and connect nodes that want to be connected
 void update_links( void ){
 	for( int i = 0; i < nodes_len; i++ ){
-		//nodes[i].clear_links();		
+		nodes[i].clear_links();		
 		for( int x = i; x < nodes_len; x++ ){
 			
 			if( get_distance( nodes[i], nodes[x]) <= NODE_LINK_DISTANCE ){
